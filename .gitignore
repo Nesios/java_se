@@ -1,0 +1,24 @@
+# Cartelle di build
+/bin/
+/target/
+
+# File temporanei
+*.log
+*.tmp
+
+# File e cartelle generati dagli IDE
+*.iml
+*.ipr
+*.iws
+.idea/
+*.classpath
+*.project
+*.settings/
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
+
+# Configurazioni personali
+*.swp
+*~
