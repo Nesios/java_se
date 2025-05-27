@@ -1,4 +1,5 @@
 package day_02;
+
 import java.util.Random;
 
 public class LancioDelDado {
