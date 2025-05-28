@@ -22,3 +22,6 @@ Thumbs.db
 # Configurazioni personali
 *.swp
 *~
+# File compilati
+bin/
+*.class
