@@ -12,7 +12,7 @@ public class CalcolaNumeroParole {
 		// TODO Auto-generated method stub
 
 		Scanner input = new Scanner(System.in);
-		System.out.println("Inserisci una frase");
+		System.out.println("Inserisci una frase:");
 		String frase = input.nextLine();
 		char carattere = ' ';
 		boolean interruttore = true;
