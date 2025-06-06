@@ -1,4 +1,4 @@
-package day_08;
+package day_06;
 
 /*Il Processo di verifica ISBN-10 viene utilizzato per convalidare i numeri di identificazione
  *  del libro. Questi normalmente contengono trattini e tipo: 3-598-21508-8 X ISBN
