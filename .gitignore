@@ -1,27 +1,31 @@
-# Cartelle di build
-/bin/
-/target/
-
-# File temporanei
-*.log
-*.tmp
-
-# File e cartelle generati dagli IDE
+# General ignores for Eclipse/Java/Maven projects
+.classpath
+.project
+.settings/
+target/
+bin/
+.idea/
+.vscode/
 *.iml
 *.ipr
 *.iws
-.idea/
-*.classpath
-*.project
-*.settings/
-
-# Sistema operativo
-.DS_Store
-Thumbs.db
-
-# Configurazioni personali
-*.swp
-*~
-# File compilati
-bin/
 *.class
+*.jar
+*.war
+*.zip
+*.rar
+*.log
+tmp/
+temp/
+build/
+.gradle/
+
+# Explicitly include main source directories
+!src/
+!WebContent/ # Includi se il tuo progetto java_academy ha una cartella WebContent
+
+# Explicitly include essential project files
+!pom.xml      # Se è un progetto Maven
+!build.gradle # Se è un progetto Gradle
+!README.md
+!LICENSE

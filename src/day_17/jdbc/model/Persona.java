@@ -1,74 +1,75 @@
 package day_17.jdbc.model;
+
 import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
+import java.time.format.DateTimeFormatter; // Non strettamente necessario per questa classe, ma può rimanere
 
 public class Persona {
-private int id;
-private String CF;
-private String nome;
-private String cognome;
-private LocalDateTime data_nascita;
+    private int id;
+    private String CF;
+    private String nome;
+    private String cognome;
+    private LocalDateTime dataNascita; // Modificato da data_nascita a dataNascita
 
-public Persona() {
-    super();
-}
+    public Persona() {
+        super();
+    }
 
-public Persona(int id, String CF, String nome, String cognome, LocalDateTime data_nascita) {
-    this.id = id;
-    this.CF = CF;
-    this.nome = nome;
-    this.cognome = cognome;
-    this.data_nascita = data_nascita;
-}
+    public Persona(int id, String CF, String nome, String cognome, LocalDateTime dataNascita) {
+        this.id = id;
+        this.CF = CF;
+        this.nome = nome;
+        this.cognome = cognome;
+        this.dataNascita = dataNascita; // Modificato
+    }
 
-public int getId() {
-    return id;
-}
+    public int getId() {
+        return id;
+    }
 
-public void setId(int id) {
-    this.id = id;
-}
+    public void setId(int id) {
+        this.id = id;
+    }
 
-public String getCF() {
-    return CF;
-}
+    public String getCF() {
+        return CF;
+    }
 
-public void setCF(java.lang.String CF) {
-    this.CF = CF;
-}
+    public void setCF(String CF) { // Rimosso java.lang.String, è implicito
+        this.CF = CF;
+    }
 
-public String getNome() {
-    return nome;
-}
+    public String getNome() {
+        return nome;
+    }
 
-public void setNome(java.lang.String nome) {
-    this.nome = nome;
-}
+    public void setNome(String nome) { // Rimosso java.lang.String, è implicito
+        this.nome = nome;
+    }
 
-public String getCognome() {
-    return cognome;
-}
+    public String getCognome() {
+        return cognome;
+    }
 
-public void setCognome(java.lang.String cognome) {
-    this.cognome = cognome;
-}
+    public void setCognome(String cognome) { // Rimosso java.lang.String, è implicito
+        this.cognome = cognome;
+    }
 
-public LocalDateTime getData_nascita() {
-    return data_nascita;
-}
+    public LocalDateTime getDataNascita() { // Modificato da getData_nascita a getDataNascita
+        return dataNascita;
+    }
 
-public void setData_nascita(LocalDateTime data_nascita) {
-    this.data_nascita = data_nascita;
-}
+    public void setDataNascita(LocalDateTime dataNascita) { // Modificato da setData_nascita a setDataNascita
+        this.dataNascita = dataNascita;
+    }
 
-@Override
-public String toString() {
-    return "Persona{" +
-            "id=" + id +
-            ", CF='" + CF + '\'' +
-            ", nome='" + nome + '\'' +
-            ", cognome='" + cognome + '\'' +
-            ", data_nascita=" + data_nascita +
-            '}';
-}
+    @Override
+    public String toString() {
+        return "Persona{" +
+                "id=" + id +
+                ", CF='" + CF + '\'' +
+                ", nome='" + nome + '\'' +
+                ", cognome='" + cognome + '\'' +
+                ", dataNascita=" + dataNascita + // Modificato
+                '}';
+    }
 }

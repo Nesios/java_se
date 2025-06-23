@@ -1,4 +1,4 @@
-package day_17.jdbc.persistenza;
+package day_17.jdbc.persistence;
 
 public class DAOException extends Exception {
 	public DAOException() {

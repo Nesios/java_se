@@ -1,4 +1,4 @@
-package day_14;
+package day_14.Matrix;
 
 public class Matrix {
 
